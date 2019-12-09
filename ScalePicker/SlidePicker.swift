@@ -409,7 +409,8 @@ public class SlidePicker: UIView, UICollectionViewDelegateFlowLayout, UICollecti
            return cell
        }
     
-    public func numberOfSectionsInCollectionView(collectionView: UICollectionView) -> Int {
+    public func numberOfSections(in collectionView: UICollectionView) -> Int {
+        
         return sectionsCount
     }
     

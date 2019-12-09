@@ -1,13 +1,23 @@
 PODS:
-  - ScalePicker (1.1.1)
-  - XLForm (3.1.1)
+  - ScalePicker (2.7.12)
+  - XLForm (3.3.0)
 
 DEPENDENCIES:
-  - ScalePicker
+  - ScalePicker (from `../.`)
   - XLForm
 
-SPEC CHECKSUMS:
-  ScalePicker: 5f3a1fd03e94eea412ed674491881f78ae9cd356
-  XLForm: c9ee7e0f859341279bfd894f9589a9d25c23e4df
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - XLForm
 
-COCOAPODS: 0.39.0
+EXTERNAL SOURCES:
+  ScalePicker:
+    :path: "../."
+
+SPEC CHECKSUMS:
+  ScalePicker: 762b9759d3d9bafef9cc21f1184f88fbefee2a98
+  XLForm: d5c391dfc62865927b5bcab0a5a0dbfb3e02b0ec
+
+PODFILE CHECKSUM: 722fe63f306fb90b589b7d887975bbc3a8ede472
+
+COCOAPODS: 1.8.3

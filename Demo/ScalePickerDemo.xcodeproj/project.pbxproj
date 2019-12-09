@@ -13,7 +13,7 @@
 		0A3517C01C96767200C58C96 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A3517BE1C96767200C58C96 /* LaunchScreen.storyboard */; };
 		0A3517CC1C96785C00C58C96 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A3517CB1C96785C00C58C96 /* Utils.swift */; };
 		0A35184F1C979E6000C58C96 /* DemoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A35184E1C979E6000C58C96 /* DemoView.xib */; };
-		CBD71F8EEFC5E9A1A614D12A /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B76B50F1516EB691A62C5E6 /* Pods.framework */; };
+		0A9E1F9D0F537D3C99C6F367 /* Pods_ScalePickerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75F4CFC56BE49B99A008420B /* Pods_ScalePickerDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,9 +27,9 @@
 		0A3517CB1C96785C00C58C96 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
 		0A35184D1C96865700C58C96 /* ScalePicker-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ScalePicker-Bridging-Header.h"; sourceTree = "<group>"; };
 		0A35184E1C979E6000C58C96 /* DemoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoView.xib; sourceTree = "<group>"; };
-		17F652E0F74BECC0329BE22E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
-		5BA16ED795AD0FAFB2B4F41A /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
-		9B76B50F1516EB691A62C5E6 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		38C9B2D980854B4DB129979F /* Pods-ScalePickerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScalePickerDemo.debug.xcconfig"; path = "Target Support Files/Pods-ScalePickerDemo/Pods-ScalePickerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		75F4CFC56BE49B99A008420B /* Pods_ScalePickerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScalePickerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C3E872CEE6D6F4495FF80E17 /* Pods-ScalePickerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScalePickerDemo.release.xcconfig"; path = "Target Support Files/Pods-ScalePickerDemo/Pods-ScalePickerDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBD71F8EEFC5E9A1A614D12A /* Pods.framework in Frameworks */,
+				0A9E1F9D0F537D3C99C6F367 /* Pods_ScalePickerDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -49,8 +49,8 @@
 			children = (
 				0A3517B41C96767200C58C96 /* ScalePickerDemo */,
 				0A3517B31C96767200C58C96 /* Products */,
-				DE0F4CD40EAE1C705CB6E875 /* Pods */,
-				E9CC679DA3128B7062329C66 /* Frameworks */,
+				BF33BA14EE65BC24B4FDA58F /* Pods */,
+				369EB962B4E051FD373CC85B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,21 +79,22 @@
 			path = ScalePicker;
 			sourceTree = "<group>";
 		};
-		DE0F4CD40EAE1C705CB6E875 /* Pods */ = {
+		369EB962B4E051FD373CC85B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				5BA16ED795AD0FAFB2B4F41A /* Pods.debug.xcconfig */,
-				17F652E0F74BECC0329BE22E /* Pods.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		E9CC679DA3128B7062329C66 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				9B76B50F1516EB691A62C5E6 /* Pods.framework */,
+				75F4CFC56BE49B99A008420B /* Pods_ScalePickerDemo.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BF33BA14EE65BC24B4FDA58F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				38C9B2D980854B4DB129979F /* Pods-ScalePickerDemo.debug.xcconfig */,
+				C3E872CEE6D6F4495FF80E17 /* Pods-ScalePickerDemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -103,12 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0A3517C41C96767200C58C96 /* Build configuration list for PBXNativeTarget "ScalePickerDemo" */;
 			buildPhases = (
-				F697023BD647024C38EEDC92 /* Check Pods Manifest.lock */,
+				07812E77BE19350A638D617B /* [CP] Check Pods Manifest.lock */,
 				0A3517AE1C96767200C58C96 /* Sources */,
 				0A3517AF1C96767200C58C96 /* Frameworks */,
 				0A3517B01C96767200C58C96 /* Resources */,
-				7F6AB156C39E371ECEC8BB11 /* Embed Pods Frameworks */,
-				3AB48614BDF880B54A17C4FC /* Copy Pods Resources */,
+				693DFBD79453D2D63BE65AE5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -139,6 +139,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -166,49 +167,46 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3AB48614BDF880B54A17C4FC /* Copy Pods Resources */ = {
+		07812E77BE19350A638D617B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
+			inputFileListPaths = (
 			);
-			name = "Copy Pods Resources";
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScalePickerDemo-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		7F6AB156C39E371ECEC8BB11 /* Embed Pods Frameworks */ = {
+		693DFBD79453D2D63BE65AE5 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ScalePickerDemo/Pods-ScalePickerDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ScalePicker/ScalePicker.framework",
+				"${BUILT_PRODUCTS_DIR}/XLForm/XLForm.framework",
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ScalePicker.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XLForm.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F697023BD647024C38EEDC92 /* Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ScalePickerDemo/Pods-ScalePickerDemo-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -279,6 +277,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -315,13 +314,14 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		0A3517C51C96767200C58C96 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5BA16ED795AD0FAFB2B4F41A /* Pods.debug.xcconfig */;
+			baseConfigurationReference = 38C9B2D980854B4DB129979F /* Pods-ScalePickerDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ScalePicker/Info.plist;
@@ -329,13 +329,14 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dklimkin.ScalePicker;
 				PRODUCT_NAME = ScalePickerDemo;
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/ScalePicker/ScalePicker-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				USER_HEADER_SEARCH_PATHS = "$(inherited) $(PROJECT_DIR)/**";
 			};
 			name = Debug;
 		};
 		0A3517C61C96767200C58C96 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 17F652E0F74BECC0329BE22E /* Pods.release.xcconfig */;
+			baseConfigurationReference = C3E872CEE6D6F4495FF80E17 /* Pods-ScalePickerDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ScalePicker/Info.plist;
@@ -343,6 +344,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = dklimkin.ScalePicker;
 				PRODUCT_NAME = ScalePickerDemo;
 				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/ScalePicker/ScalePicker-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
 				USER_HEADER_SEARCH_PATHS = "$(inherited) $(PROJECT_DIR)/**";
 			};
 			name = Release;

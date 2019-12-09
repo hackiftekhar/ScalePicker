@@ -47,7 +47,7 @@
 @synthesize rowDescriptor = _rowDescriptor;
 @synthesize popoverController = __popoverController;
 
-- (id)initWithStyle:(UITableViewStyle)style
+- (instancetype)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
     if (self){
@@ -57,7 +57,7 @@
     return self;
 }
 
-- (id)initWithStyle:(UITableViewStyle)style titleHeaderSection:(NSString *)titleHeaderSection titleFooterSection:(NSString *)titleFooterSection
+- (instancetype)initWithStyle:(UITableViewStyle)style titleHeaderSection:(NSString *)titleHeaderSection titleFooterSection:(NSString *)titleFooterSection
 {
     self = [self initWithStyle:style];
     if (self){
@@ -86,6 +86,11 @@
 {
     XLFormRightDetailCell * cell = [tableView dequeueReusableCellWithIdentifier:CELL_REUSE_IDENTIFIER forIndexPath:indexPath];
     id cellObject =  [[self selectorOptions] objectAtIndex:indexPath.row];
+
+    [self.rowDescriptor.cellConfigForSelector enumerateKeysAndObjectsUsingBlock:^(NSString *keyPath, id value, __unused BOOL *stop) {
+        [cell setValue:(value == [NSNull null]) ? nil : value forKeyPath:keyPath];
+    }];
+    
     cell.textLabel.text = [self valueDisplayTextForOption:cellObject];
     if ([self.rowDescriptor.rowType isEqualToString:XLFormRowDescriptorTypeMultipleSelector] || [self.rowDescriptor.rowType isEqualToString:XLFormRowDescriptorTypeMultipleSelectorPopover]){
         cell.accessoryType = ([self selectedValuesContainsOption:cellObject] ? UITableViewCellAccessoryCheckmark : UITableViewCellAccessoryNone);
@@ -133,8 +138,8 @@
         if ([[self.rowDescriptor.value valueData] isEqual:[cellObject valueData]]){
             if (!self.rowDescriptor.required){
                 self.rowDescriptor.value = nil;
+				cell.accessoryType = UITableViewCellAccessoryNone;
             }
-            cell.accessoryType = UITableViewCellAccessoryNone;
         }
         else{
             if (self.rowDescriptor.value){
