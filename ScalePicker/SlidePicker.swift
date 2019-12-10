@@ -467,6 +467,7 @@ public class SlidePicker: UIView, UICollectionViewDelegateFlowLayout, UICollecti
             if let cell = cell, cell.value == value {
                 delegate?.didSelectValue(value: cell.value)
                 collectionView.scrollToItem(at: indexPath! as IndexPath, at: .centeredHorizontally, animated: animated)
+                complete?()
             }
         } else {
             if snapEnabled {
@@ -481,7 +482,7 @@ public class SlidePicker: UIView, UICollectionViewDelegateFlowLayout, UICollecti
                         if let cell = cell, cell.value == value {
                             delegate?.didSelectValue(value: cell.value)
                             collectionView.scrollToItem(at: indexPath! as IndexPath, at: .centeredHorizontally, animated: animated)
-                            
+                            complete?()
                             break
                         }
                     }
@@ -497,6 +498,8 @@ public class SlidePicker: UIView, UICollectionViewDelegateFlowLayout, UICollecti
                     let offsetX = absolutePercent * (self.collectionView.contentSize.width - self.bounds.width)
                     
                     self.collectionView.contentOffset = CGPoint(x: offsetX, y: self.collectionView.contentOffset.y)
+                    
+                    complete?()
                 }
             }
         }
